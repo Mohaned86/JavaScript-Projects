@@ -9,5 +9,5 @@ function My_function (a, b, c)  {
 function myfunction() {
     var sentence = "I am learning";
     sentence += "a lot from this book!";
-    document.getElementById(concatenate). innerHTML = sentence;
+    document.getElementById("concatenate").innerHTML = sentence;
 }
