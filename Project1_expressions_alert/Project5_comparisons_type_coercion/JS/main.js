@@ -1,1 +1,1 @@
-document.write(typeof 5);
+document.write("10" + 7);
