@@ -5,6 +5,7 @@ function dictionary() {
         Breed:"Labrador",
         Age:5,
         Sound:"Bark!",
-    }
-    document.getElementById("Dictionary").innerHTML=Animal.Sound;
+    };
+    delete Animal.Color
+    document.getElementById("Dictionary").innerHTML=Animal.Color;
 }
