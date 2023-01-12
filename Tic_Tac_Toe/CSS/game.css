@@ -5,7 +5,7 @@
     /*This property centers our container.*/
     margin: 0 auto;
     /*50px down from the top.*/
-    margin: 50px;
+    /* margin: 50px;
 }
 h1{
     text-align: center;
