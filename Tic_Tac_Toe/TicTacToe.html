@@ -5,14 +5,13 @@
         <meta charset="UTF-8">
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <link rel="stylesheet" type="text/css" href="CSS/game.css">
-        <script src="JS/tictactoe.js"></script>
     </head>
     <body id='body'>
         <h1>TIC TAC TOE GAME</h1>
         <!--This container is meeded to overlay our table.-->
         <div class='center-container'>
             <!--NOTE: Canvas width and height must be within the element.-->
-            <canvas id='win-lines' width='608' height='608'></canvas>
+            <canvas id='Win-lines' width='608' height='608'></canvas>
             <table>
                 <tr >
                     <td id='0' onclick='placeXOrO("0")'></td>
@@ -31,5 +30,6 @@
                 </tr>
             </table>
         </div>
+        <script src="JS/tictactoe.js"></script>
     </body>
 </html>
