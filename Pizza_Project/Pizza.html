@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Pizza Drill Demo</title><br>
+        <title><h3>Pizza Drill Demo</h3></title><br>
         <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
         <meta content="width=device,initial-scale=1.0" name="viewport">
         <script src="Pizza_JavaScript/Pizza.js" defer></script>
         <link rel="stylesheet" type="text/css" href="Pizza_CSS/Pizza.css"/>
     </head>
     <body>
+        <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+        <h1>Smooth Scroll</h1>
+
+        <div class="main" id="section1">
+        <h2>Section 1</h2>
+        <p>Click on the link to see the "smooth" scrolling effect.</p>
+        <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+        <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+        </div>
+
+        <div class="main" id="section2">
+        <h2>Section 2</h2>
+        <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+        </div>
+        <!-- A button to open the popup form -->
+        <button class="open-button" onclick="openForm()">Login</button>
+        <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" placeholder="Enter Name" 
+            required><br>
+            <label for="lname">Phone numbe:</label><br>
+            <input type="tel" id="Phone" name="Phone" 
+            placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+            required><br>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" 
+            name="email" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" 
+            name="psw" required>
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="ntn cancel" 
+            onclick="closeForm()">Cansel</button>
+        </form>
+        </div>
+        <script>
+            document.body.classList.add('fade-out');
+        </script>
         <div id="menuBG">
-            <h1 style="margin:0 0px 0 20px;">Pizza Deill Tutorial</h1>
+            <h1  style="font-size:4vw;">Pizza Deill Tutorial</h1>
             <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
             <form id="frmMenu">
                 <div class="menu left">
