@@ -70,6 +70,7 @@ function openForm() {
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
+
 window.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('fade-out');
     });
