@@ -1,7 +1,24 @@
 /***** GENERAL STYLING *****/
+/*Affects entire document */
+html {
+    scroll-behavior: smooth; /* This ensures that the page scrolliing is smooth when the buttons on the nav bar is clicked */
+}
 /* Body */
 body {
     margin: 0%  /* This ensures our site displays all the way to the edge of the browser screen */
+    opacity: 1; /*This and transition affect the page loadind fade in effect */
+    transition: 3s opacity; /* This causes a 3 second fade in */
+    letter-spacing: .2vw; /*vw is a relative measurement, 1vw is equal to 1% of the viewport width */
+    font-family: Avant Garde, Helvetica;
+    font-size: 1.5vw;
+    overflow-x: hidden; /* This prevents the horizontal scroll bar from appearing when the quote is hovered over */
+    user-select: none; /*This prevents the text on the webpage from being highlighted by the user */
+}
+
+/* This section contributes to the fade effect for the page that occurs when the page is loaded */
+body.fade-out {
+    opacity: .1; /*This sets the level of opacity at the start of page load */
+
 }
 
 /* Heading 1 elements */
@@ -23,6 +40,7 @@ h1:hover {
 /* Styling for portfolio title text */
 .white-text {
     color: #fff; /* This is used to change the color of the portfolio title text */
+    padding-top: 10vw; /* Adds padding (equal to 10% of the viewport height) to the top of the Portfolio Title text */;
 }
 
 /* Paragraph elements */
@@ -55,6 +73,8 @@ p:hover {
 /* Anchor elements */
 a {
     color: blue; /* This ensures all links are blue */
+    cursor: pointer; /*This ensures all links change the mouse to pointer when hovered over or clicked */
+    text-decoration: underline; /*This ensures all links are underlind */
 }
 
 /* Quotation elements */
@@ -67,10 +87,9 @@ img {
     filter: grayscale(75%); /* This rids our pictures of 75% of their color */
     border-radius: 8px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
-    height: 340px; /* Sets the height of all images */
+    max-height: 100%; /* Sets the height of all images */
     display: block; /* By specifying block display we can ensure our images are able to be centered */
-    margin-left: auto; /* In combination with "margin-right: auto" this centers all images */
-    margin-right: auto;
+    margin-left: auto auto auto auto; /* This centers all images */
 }
 
 /* Image element hover effects */
@@ -168,10 +187,17 @@ footer {
 
 /* Screens that are 576px and smaller will not display the background video */
 @media screen and (max-width: 576px) {
+    /* Formatting for background video */
     #Typing_Video {
         display: none;
+        position: fixed; /* This fixes the video to the page */
+        right: 0%; /* This ensures there is no space between the edge of the video and the edge of the page */
+        bottom: 0; /*This ensuers no soace between the edge of the video and the bottom of the page */
+        min-width: 100%; /*This ensures the video is displayed across the full width of the page */
+        z-index: -1; /*This place the video behind the other elememt on the page */
     }
 }
+
 
 /* Texts over the video */
 .Video_Text {
