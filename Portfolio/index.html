@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>MOHANED ELWALI</title>
+        <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
+        <link rel="stylesheet" type="text/css" href="./protfolio.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+            <!-- onclick and ondbclick functions added to open and close the contact form-->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Coding_Video">
+                <source src="./images/video/coding_video.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">MOHANED ELWALI's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                        <br>field of battle and to command such unswervingly dutiful actors or troops.
+                    </q>
+                    <br> -Joseph Weizenbaum
+                    <br>
+                    <br> My name is Mohaned Elwali. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy! 
+                </p>
+            </strong>
+        </div>
+
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="muSlideshow fade">
+                        <img class="Slideshow_Images" src="images/mohaned.jpg" alt="Picture of yourself">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                        <!-- Slide 2 of 6 -->
+                    <div class="mySlide fade">
+                        <img class="Slideshow_Images" src="images/HTML_CSS_JS.jpg" alt="HTNL, CSS, JS logos">
+                        <div class="text">I am a full atack software Developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlide face">
+                        <img class="Slideshow_Images" src="images/python.jpg" alt="Puthon logo">
+                        <div class="text">python language</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlide fade">
+                        <img class="Slideshow_Images" src="images/GitHub.png" alt="GitHub logo">
+                        <div class="text">github control the project and debuging</div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlide fade">
+                        <img class="Slideshow_Images" src="images/coding_icon.png" alt="coding logo">
+                        <div class="text">bluid project from skrach or using framwork or liberary and debuging</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlide fade">
+                        <img class="Slideshow_Images" src="images/contact image.jpg" alt="Contact logo">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlide(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlide(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="./images/Portfolio.jpeg" alt="My Personal Photo">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am mechanical engineer with 13 years of experience  who loves to code! and traveling and soccer (play and watch) 
+                    <br>
+                    <br>I am a ttending <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages:PYTHON, HTML, CSS, JavaScript, SQL, and more. 
+                    <br>
+                    <br>I am a full stack and fast learner and I would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/Mohaned86" target="_blank">Mohaned86 Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/Mohaned86" target="_blank"><img src="./images/github-cover.jpg" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pup_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <img src="./images/contact image.jpg" alt="Contact_Image">
+            
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="https://formspree.io/f/xjvdkepd" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Software engineer 2021, <a href="https://www.linkedin.com/in/mohaned-elwali-71480b44/" target="_blank">Mohaned Elawli</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
