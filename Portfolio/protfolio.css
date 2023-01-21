@@ -392,12 +392,12 @@ footer {
     display: none; /* Set the display to none, we will use the JS to show the contact form */
     position: fixed; /* The form stays in the same location no matter what */
     bottom: .5vw; /* Slightly up from the bottom of the viewport */
-    right: .5vw; /*Slightly in from the right side of the viewport */
+    left: .5vw; /*Slightly in from the right side of the viewport */
 }
 
 /* Form styling */
 .form-container {
-    max-width: 49vw; /*Relative sizing of the form container - 49% of the viewport width */
+    max-width: 25%; /*Relative sizing of the form container - 49% of the viewport width */
     padding: 1vw; /* Adds padding between the form popup and the form-container */
     background-color: white;
 }
@@ -426,7 +426,7 @@ button {
     font-weight: bold;
     padding: 1.5vw; /*Adds padding to the text in the button */
     cursor: pointer; /* Changes the cursor to pointer over button elements */
-    width: 100%; /*sets the width of the buttons to 100% of their container */
+    width: 25%; /*sets the width of the buttons to 100% of their container */
     height: auto; /* Allows the height to be resized depending on the content showing */
 }
 
