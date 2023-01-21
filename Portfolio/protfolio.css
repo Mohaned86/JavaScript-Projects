@@ -392,7 +392,7 @@ footer {
     display: none; /* Set the display to none, we will use the JS to show the contact form */
     position: fixed; /* The form stays in the same location no matter what */
     bottom: .5vw; /* Slightly up from the bottom of the viewport */
-    left: .5vw; /*Slightly in from the right side of the viewport */
+    right: .5vw; /*Slightly in from the right side of the viewport */
 }
 
 /* Form styling */
@@ -404,19 +404,7 @@ footer {
 
 /* Input fields */
 /* input[type=text] targets all text input sections of the contact form */
-.form-container input[type=text] {
-    width: 100%; /* Each input box covers the full width of the container */
-    padding: 12px; /* Adds padding within the text box */
-    border: none; /* Removes the border from the input boxes */
-    border-radius: 4px; /* Slightly rounds the corners of the text box border */
-    box-sizing: border-box; /* This creates a box with a border around the contact form input boxes */
-    margin-top: 6px; /* Adds a margin to the top of the text box */
-    margin-bottom: 16px; /* Adds a margin to the bottom of the text box */
-    resize: vertical; /* This allows the user to resize the text boxes vertically */
-    font-family: Perpetua, Rockwell Extra Bold;
-    font-size: 1vw; /* Relative font sizing based on the width of the viewport */
-    background: Gainsboro; /* Sets the background color of the input boxes */
-}
+
 
 /* General styling for all buttons */
 button {
