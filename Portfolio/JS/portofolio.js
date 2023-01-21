@@ -6,6 +6,9 @@ function openForm() {
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+    });
 
 // This function displays the first image in the slideshow when the page loads
 var slideIndex = 1;
