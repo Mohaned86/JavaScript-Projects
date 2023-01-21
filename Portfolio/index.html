@@ -18,9 +18,8 @@
             <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
             <!-- onclick and ondbclick functions added to open and close the contact form-->
-            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+            <a href="#Contact">Contact</a>
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -59,7 +58,7 @@
             <div id="Slideshow_Background">
                 <div id="Slideshow_Container">
                     <!-- Slide 1 of 6 -->
-                    <div class="mySlideshow fade">
+                    <div class="mySlide fade">
                         <img class="Slideshow_Images" src="images/mohaned.jpg" alt="Picture of yourself">
                         <div class="text">I'm available to assist you on your project!</div>
                     </div>
@@ -144,19 +143,26 @@
 
         <!--Contact section-->
         <div id="Contact">
-            <button onclick="openForm()" class="Pup_Up_Button">CONTACT</button>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">
+            <button onclick="openForm()" class="open-btn">CONTACT</button></a>
             <div class="form-popup" id="myForm">
             
                 <h1>Contact</h1>
                 <!--This specifies where and how to send the form data; we are leaving it blank-->
-                <form action="https://mohanedelwali.com" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+                <form action="https://mohanedelwali.com" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="fname">Name:</label><br>
+                    <input type="text" id="fname" placeholder="Enter Name" 
+                    required><br>
+                    <label for="lname">message:</label><br>
+                    <input type="text" id="fname" placeholder="type your message"
+                    required><br>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" 
+                    name="email" required>
+                    <button type="submit" class="btn">Contact</button>
+                    <button type="button" class="btn Cancel" 
+                    onclick="closeForm()">Cancel</button>
                 </form>
             </div>
         </div>

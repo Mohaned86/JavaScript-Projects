@@ -10,23 +10,24 @@ window.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('fade-out');
     });
 
+
 // This function displays the first image in the slideshow when the page loads
 var slideIndex = 1;
-showSlides(slideIndex);
+showSlide(slideIndex);
 
 // This function changes the slide when the left or right arrows are clicked
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function plusSlide(n) {
+    showSlide(slideIndex += n);
 }
 
 // This function changes the slide when the dots are clicked//
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+    showSlide(slideIndex = n);
 }
 
 
-function showSlides(n) {
-    var slides = document.getElementsByClassName("mySlides"); // This takes all elements with the class name "mySlides" and stores them in the variable array "slides"
+function showSlide(n) {
+    var slides = document.getElementsByClassName("mySlide"); // This takes all elements with the class name "mySlides" and stores them in the variable array "slides"
     var dots = document.getElementsByClassName("dot"); // This takes all elements with the class name "dot" and stores them in the variable array "dots"
     if (n > slides.length) {slideIndex = 1}; // If n (the number passed into the function) is greater than the length of the array "slides", the slideIndex is set to 1
     if (n < 1) {slideIndex = slides.length}; // If n (the number passed into the function) is less than 1, te slideIndex is set to the length of the array "slides"

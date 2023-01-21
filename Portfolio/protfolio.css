@@ -397,7 +397,7 @@ footer {
 
 /* Form styling */
 .form-container {
-    max-width: 25%; /*Relative sizing of the form container - 49% of the viewport width */
+    max-width: inherit; /*Relative sizing of the form container - 20% of the viewport width */
     padding: 1vw; /* Adds padding between the form popup and the form-container */
     background-color: white;
 }
@@ -418,6 +418,20 @@ footer {
     background: Gainsboro; /* Sets the background color of the input boxes */
 }
 
+open-btn {    
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 25%;
+} 
+
+
 /* General styling for all buttons */
 button {
     font-family: "Trebuchet MS", Optima;
@@ -426,7 +440,7 @@ button {
     font-weight: bold;
     padding: 1.5vw; /*Adds padding to the text in the button */
     cursor: pointer; /* Changes the cursor to pointer over button elements */
-    width: 25%; /*sets the width of the buttons to 100% of their container */
+    width: 100%; /*sets the width of the buttons to 100% of their container */
     height: auto; /* Allows the height to be resized depending on the content showing */
 }
 
@@ -458,10 +472,12 @@ input[type=submit] {
 .form-container .btn {
     background-color: white; /* Turns the background of the submit button white when the user hovers over it */
     color: black; /* Turns the font black when hovered over */
-    transform: scale(1.5); /* Makes the button increase 1.5 times in size */
-    transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds */
-    border-color: black;
-    margin-bottom: 1vw; /*Adds space between the submit buttin and the close button */
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
 }
 
 /* Close button */
